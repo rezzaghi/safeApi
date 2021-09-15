@@ -18,6 +18,9 @@ public class Pessoa
     @Column(nullable = false)
     private String nome;
 
+    @Column(nullable = false)
+    private String cpf;
+
     public long getId() {
         return id;
     }
@@ -29,6 +32,16 @@ public class Pessoa
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+
 
     public void setId(long id) {
         this.id = id;
